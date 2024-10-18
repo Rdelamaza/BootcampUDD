@@ -2,7 +2,7 @@ Proyecto Modulo 1
 
 Proyecto de entrega de primer modulo Sistema de costos. 
 
-El objetivo principal de este proyecto es construir un pseudocódigo que permita:
+El objetivo principal de este proyecto era crear un pseudocódigo que permita:
 
 Entender y aplicar conceptos básicos de algoritmos y programación estructurada.
 Utilizar variables, constantes, operadores aritméticos y de comparación.
