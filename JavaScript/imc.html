@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h1>Calculadora IMC</h1>
+    <script>
+        function calcularIMC(){
+            let peso;
+            let altura;
+
+            peso = parseFloat(prompt("Ingrese su peso en kg"))
+            altura = parseFloat(prompt("Ingrese su altura en metros"))
+
+            let IMC = peso / (altura * altura)
+            console.log(`Tu IMC es de ${IMC}`)
+
+            if (IMC < 18.5) {
+                console.log('Estas bajo peso')
+                } else if (IMC>= 18.5 && IMC <= 24.9){
+                    console.log('Estas en peso normal')
+                }else if (IMC >= 25 && IMC<= 29.9){
+                    console.log('Estas con sobrepeso')
+                } else{
+                     console.log('Estas con obesidad')
+                }
+            }
+            calcularIMC()
+</script>
+</body>
+</html>
