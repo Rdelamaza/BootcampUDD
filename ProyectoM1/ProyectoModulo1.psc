@@ -45,8 +45,11 @@ Proceso ProyectoM1
 	descuentoCupon <- 0;
 	si (respuesta = 'si') Entonces
 		descuentoCupon <- 0;
-		Escribir 'Porfavor ingrese el codigo de descuento: dsct10, dsct20, dsct30';
-		leer respuestaCupon;
+		Repetir
+			Escribir 'Porfavor ingrese el codigo de descuento: dsct10, dsct20, dsct30';
+			leer respuestaCupon;
+		Hasta Que respuestaCupon = 'dsct10' o respuestaCupon = 'dsct20' o respuestaCupon = 'dsct30'
+		
 		/////////////// Descuento 10% //////////////
 		si (respuestaCupon = "dsct10") Entonces
 			descuentoCupon <- subtotal * valoresDescuento[0];
