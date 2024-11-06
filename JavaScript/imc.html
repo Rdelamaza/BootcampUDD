@@ -16,7 +16,7 @@
             altura = parseFloat(prompt("Ingrese su altura en metros"))
 
             let IMC = peso / (altura * altura)
-            console.log(`Tu IMC es de ${IMC}`)
+            console.log(`Tu IMC es de ${IMC.toFixed(2)}`)
 
             if (IMC < 18.5) {
                 console.log('Estas bajo peso')
