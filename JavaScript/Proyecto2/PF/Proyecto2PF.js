@@ -21,7 +21,7 @@ const preguntas = [
     resultados: {},
     },
     {
-    pregunta: "¿Dónde colocarías tus plantas ornamentales?",
+    pregunta: "¿Dónde pondrias tus plantas ornamentales?",
     alternativas: ["Ventana", "Sala", "Cocina", "Habitacion"],
     resultados: {},
     },
