@@ -2,42 +2,42 @@
 const preguntas = [
     {
     pregunta: "¿Cuál de estas plantas prefieres para interiores?",
-    alternativas: ["Cactus", "Monstera", "Palmera", "Helecho"],
+    alternativas: ["cactus", "monstera", "palmera", "helecho"],
     resultados: {},
     },
     {
     pregunta: "¿Qué tamaño de planta ornamental prefieres?",
-    alternativas: ["Pequeña", "Mediana", "Grande"],
+    alternativas: ["pequena", "mediana", "grande"],
     resultados: {},
     },
     {
     pregunta: "¿Qué tipo de mantenimiento prefieres para tus plantas?",
-    alternativas: ["Frecuente", "moderado", "casi nada"],
+    alternativas: ["frecuente", "moderado", "casi nada"],
     resultados: {},
     },
     {
     pregunta: "¿Qué te gusta más en una planta ornamental?",
-    alternativas: ["Flores", "Follaje", "Diseño"],
+    alternativas: ["flores", "follaje", "diseno"],
     resultados: {},
     },
     {
     pregunta: "¿Dónde pondrias tus plantas ornamentales?",
-    alternativas: ["Ventana", "Sala", "Cocina", "Habitacion"],
+    alternativas: ["ventana", "sala", "cocina", "habitacion"],
     resultados: {},
     },
     {
     pregunta: "¿Cuál crees que es el mayor beneficio de tener plantas ornamentales en casa?",
-    alternativas: ["Purifican el aire", "Reducen el estrés", "Decoración", "Aportan frescura al ambiente"],
+    alternativas: ["purifican el aire", "reducen el estres", "decoracion", "aportan frescura al ambiente"],
     resultados: {},
     },
     {
     pregunta: "¿Qué estilo prefieres para tus plantas ornamentales?",
-    alternativas: ["Minimalista", "Tropical", "Desértico", "Clasico"],
+    alternativas: ["minimalista", "tropical", "desertico", "clasico"],
     resultados: {},
     },
     {
     pregunta: "¿Qué planta ornamental recomendarías para principiantes?",
-    alternativas: ["Suculentas", "Pothos", "Sansevieria", "Drácena"],
+    alternativas: ["suculentas", "pothos", "sansevieria", "dracena"],
     resultados: {},
     },
 ];
