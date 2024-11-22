@@ -50,16 +50,17 @@ const crearEncuesta = (preguntas) => {
 };
 //Funcion para agregar voto
 function agregarVoto (pregunta, alternativaSeleccionada){
-    if(pregunta.alternativas.includes(alternativaSeleccionada)){
+    if(pregunta.alternativas === pregunta.alternativas.includes(alternativaSeleccionada)){
         if(pregunta.resultados[alternativaSeleccionada]){
             pregunta.resultados[alternativaSeleccionada]++;
         } else {
             pregunta.resultados[alternativaSeleccionada] = 1;
         }
-        mostrarResultados(pregunta);
     }else {
         console.log("La opcion escrita no existe");
+        alert("La opcion escrita no existe");
     }
+    
 }
 // Funcion para mostrar resultados de una pregunta.
 function mostrarResultados(pregunta) {
@@ -82,13 +83,13 @@ function votar(pregunta) {
 
     );
 
-    if (alternativaSeleccionada !== null){
+    if (alternativaSeleccionada != null) {
         agregarVoto(pregunta, alternativaSeleccionada.trim());
     } else {
         console.log("Votacion Cancelada");
         
     }
-    
+
 }
 
 //Funcion para ejecutar encuesta
@@ -112,6 +113,7 @@ ejecutarEncuestaCompleta();
         } else {
             console.log("Encuesta Finalizada. Resultados");
         }
+        mostrarResultados(pregunta);
     }
 
 

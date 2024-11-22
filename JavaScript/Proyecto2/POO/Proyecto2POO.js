@@ -36,7 +36,7 @@ class Encuesta {
         while (seguirVotando) {
             this.preguntas.forEach((pregunta)=>this.votar(pregunta));
             seguirVotando = confirm("Desea seguir votando?");
-            
+            this.preguntas.forEach((pregunta)=> pregunta.mostrarResultado());
         }
     }
     
@@ -48,7 +48,7 @@ class Encuesta {
             pregunta.agregarVoto(alternativaSeleccionada.trim());
             console.log("Alternativa seleccionada", alternativaSeleccionada);
             console.log("Resultados de la encuesta: ");
-            this.preguntas.forEach((pregunta)=> pregunta.mostrarResultado());
+            
         } else {
             console.log("Votacion cancelada");
         }
