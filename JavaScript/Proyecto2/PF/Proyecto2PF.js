@@ -50,7 +50,7 @@ const crearEncuesta = (preguntas) => {
 };
 //Funcion para agregar voto
 function agregarVoto (pregunta, alternativaSeleccionada){
-    if(pregunta.alternativas === pregunta.alternativas.includes(alternativaSeleccionada)){
+    if(pregunta.alternativas.includes(alternativaSeleccionada)){
         if(pregunta.resultados[alternativaSeleccionada]){
             pregunta.resultados[alternativaSeleccionada]++;
         } else {
@@ -65,7 +65,7 @@ function agregarVoto (pregunta, alternativaSeleccionada){
 // Funcion para mostrar resultados de una pregunta.
 function mostrarResultados(pregunta) {
     console.log(`Resultados para la pregunta: "${pregunta.pregunta}":`);
-    for (let opcion of pregunta.alternativas){
+    for (let opcion of preguntas.alternativas){
         console.log(
             `Alternativa "${opcion}": ${pregunta.resultados[opcion] || 0 } votos`
         );
@@ -113,7 +113,7 @@ ejecutarEncuestaCompleta();
         } else {
             console.log("Encuesta Finalizada. Resultados");
         }
-        mostrarResultados(pregunta);
+        mostrarResultados(preguntas);
     }
 
 
