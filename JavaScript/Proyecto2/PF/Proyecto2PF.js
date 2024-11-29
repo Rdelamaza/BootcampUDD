@@ -65,13 +65,12 @@ function agregarVoto (pregunta, alternativaSeleccionada){
 // Funcion para mostrar resultados de una pregunta.
 function mostrarResultados(pregunta) {
     console.log(`Resultados para la pregunta: "${pregunta.pregunta}":`);
-    for (let opcion of preguntas.alternativas){
+    for (let opcion of pregunta.alternativas){
         console.log(
             `Alternativa "${opcion}": ${pregunta.resultados[opcion] || 0 } votos`
         );
         
     }
-    
 }
 
 //Funcion para que usuario pueda votar en pregunta
@@ -113,7 +112,7 @@ ejecutarEncuestaCompleta();
         } else {
             console.log("Encuesta Finalizada. Resultados");
         }
-        mostrarResultados(preguntas);
+        preguntas.forEach(pregunta => mostrarResultados(pregunta));
     }
 
 
